@@ -1,7 +1,7 @@
 # YRRY
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 ## Description: 
-asdf
+sdfgdf
 ## Table of Contents: 
 * [Installation](#installation)
 * [Usage](#usage) 
@@ -11,14 +11,14 @@ asdf
 * [Questions](#questions) 
 ## Installation: 
 ## Usage: 
-df
-![Screenshot]( v)
+asdf
+![Screenshot](fsgb)
 ## Link: 
-sdfg
+asf
 ## License: 
-Licensed under the [Apache](https://opensource.org/licenses/Apache-2.0) license. 
+Licensed under the [GPL](https://www.gnu.org/licenses/gpl-3.0) license. 
 ## Contributing
-dfh
+wr
 ## Tests: 
 ## Questions
-dfh
+wr
