@@ -41,7 +41,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'credits',
+        name: 'contributing',
         message: 'Enter credits here:',
     },
     {
@@ -62,19 +62,26 @@ function writeToFile(fileName, data) {
         '## Table of Contents: \n'+
         '* Installation\n'+
         '* [Usage](#usage) \n'+
-        '* License \n'+
-        '* Contributing \n'+
-        '* Tests \n'+
-        '* Questions \n'+
+        '* [License](#license) \n'+
+        '* [Contributing](#contributing) \n'+
+        '* [Tests](#tests) \n'+
+        '* [Questions](#questions) \n'+
+        '## Installation: \n'+
         '## Usage: \n'+
         data.usage+ '\n'+
         '![Screenshot]('+data.screenshot+')\n'+
         '## Link: \n'+
         data.link+'\n'+
-        '## Credits: \n'+
-        data.cretits+'\n'+
+    
         '## License: \n'+
-        data.license+'\n'
+        data.license+'\n'+
+        '## Contributing\n'+
+        data.contributing+'\n'+
+        '## Tests: \n'+
+        // data.license+'\n'+
+        '## Questions\n'+
+        data.contributing+'\n'
+
         , (err) => err ? console.log(err) : console.log('Readme file created!'));
 }
 
