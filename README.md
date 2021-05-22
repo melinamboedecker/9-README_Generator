@@ -1,19 +1,19 @@
-# awesome
+# thing
 ## Description: 
-this is what it does
+does this
 ## Table of Contents: 
 * Installation
-* Usage 
+* Usage(#Usage) 
 * License 
 * Contributing 
 * Tests 
 * Questions 
 ## Usage: 
-no like that 
+do it that way
 ![Screenshot](here)
 ## Link: 
 there
 ## Credits: 
 undefined
 ## License: 
-mig
+A

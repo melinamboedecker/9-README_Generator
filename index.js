@@ -42,12 +42,14 @@ const questions = [
     {
         type: 'input',
         name: 'credits',
-        message: "Enter credits here:",
+        message: 'Enter credits here:',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
-        message: "Enter license here:"
+        message: 'Choose a license',
+        choices: ['MIT', 'A', 'B'],
+
     }
 ];
 
@@ -59,7 +61,7 @@ function writeToFile(fileName, data) {
         data.description+ '\n'+
         '## Table of Contents: \n'+
         '* Installation\n'+
-        '* Usage \n'+
+        '* Usage(#Usage) \n'+
         '* License \n'+
         '* Contributing \n'+
         '* Tests \n'+
