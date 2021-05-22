@@ -60,7 +60,7 @@ function writeToFile(fileName, data) {
         '## Description: \n'+
         data.description+ '\n'+
         '## Table of Contents: \n'+
-        '* Installation\n'+
+        '* [Installation](#installation)\n'+
         '* [Usage](#usage) \n'+
         '* [License](#license) \n'+
         '* [Contributing](#contributing) \n'+
