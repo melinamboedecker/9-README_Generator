@@ -79,10 +79,12 @@ function getBadge (chosenLicense) {
         licenseLink = '[MIT](https://opensource.org/licenses/MIT)';
     } else {
         if (chosenLicense === 'Apache') {
-            licenseBadge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+            licenseBadge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+            licenseLink = '[Apache](https://opensource.org/licenses/Apache-2.0)';
         } else {
             if (chosenLicense === 'GPL') {
-                licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+                licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+                licenseLink = '[GPL](https://www.gnu.org/licenses/gpl-3.0)';
             }
         }
     }
