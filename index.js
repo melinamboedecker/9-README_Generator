@@ -16,18 +16,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contents',
-        message: 'Enter Table of Contents',
-    },
-    {
-        type: 'input',
         name: 'installation',
-        message: 'Enter Installation Information',
+        message: 'Enter installation instructions',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Enter instructions and examples for use',
+        message: 'Enter usage instructions and examples for use',
     },
     {
         type: 'input',
@@ -42,13 +37,35 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'Enter credits here:',
+        message: 'Enter contribution guidelines:',
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Enter test instructions',
     },
     {
         type: 'list',
         name: 'license',
         message: 'Choose a license',
-        choices: ['MIT', 'A', 'B'],
+        choices: ['MIT', 'Apache', 'GPL'],
+    },
+    {
+        type: 'input',
+        name: 'githubusername',
+        message: 'Enter your GitHub user name',
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address',
+        // validate: function(input) {
+        //     if (input.includes("@")) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
 
     }
 ];
@@ -57,6 +74,7 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, 
         '# ' +data.title+ '\n'+
+        '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) \n'+
         '## Description: \n'+
         data.description+ '\n'+
         '## Table of Contents: \n'+
