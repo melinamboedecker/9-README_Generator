@@ -70,11 +70,35 @@ const questions = [
     }
 ];
 
+var licenseBadge;
+var licenseLink;
+
+function getBadge (chosenLicense) {
+    if (chosenLicense === 'MIT') {
+        licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+        licenseLink = '[MIT](https://opensource.org/licenses/MIT)';
+    } else {
+        if (chosenLicense === 'Apache') {
+            licenseBadge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+        } else {
+            if (chosenLicense === 'GPL') {
+                licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+            }
+        }
+    }
+}
+
+
+
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    console.log('PPPPPPPPPPPPPPPPPPP')
+    console.log(data.license)
+    getBadge(data.license)
     fs.writeFile(fileName, 
         '# ' +data.title+ '\n'+
-        '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) \n'+
+        `${licenseBadge} \n`+
         '## Description: \n'+
         data.description+ '\n'+
         '## Table of Contents: \n'+
@@ -92,7 +116,7 @@ function writeToFile(fileName, data) {
         data.link+'\n'+
     
         '## License: \n'+
-        data.license+'\n'+
+        `Licensed under the ${licenseLink} license. \n`+
         '## Contributing\n'+
         data.contributing+'\n'+
         '## Tests: \n'+
@@ -109,7 +133,7 @@ function init() {
     inquirer.prompt(questions)
     .then((data) => {
         console.log(data);
-        writeToFile('readme.md', data);
+        writeToFile(`${data.title}_readme.md`, data);
     })
     
 }
