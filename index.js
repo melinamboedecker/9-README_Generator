@@ -121,17 +121,18 @@ function writeToFile(fileName, data) {
         '## Usage: \n'+
         data.usage+ '\n'+
         '![Screenshot]('+data.screenshot+')\n'+
-        '## Link: \n'+
-        data.link+'\n'+
-    
+        '[Deployed page](#'+data.link+'\n'+
+       
         '## License: \n'+
         `Licensed under the ${licenseLink} license. \n`+
-        '## Contributing\n'+
+        
+        '## Contributing: \n'+
         data.contributing+'\n'+
         '## Tests: \n'+
         // data.license+'\n'+
         '## Questions\n'+
-        data.contributing+'\n'
+        '![GitHub-Mark-32px.png] ['+data.githubusername+'](#https://github.com/'+data.githubusername+') \n'+
+        'If you have any additional questions, please contact me at '+data.email+'\n'
 
         , (err) => err ? console.log(err) : console.log('Readme file created!'));
 }
