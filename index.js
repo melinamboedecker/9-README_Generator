@@ -101,9 +101,7 @@ function getBadge (chosenLicense) {
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    console.log('PPPPPPPPPPPPPPPPPPP')
-    console.log(data.license)
+function writeToFile(fileName, data) { 
     getBadge(data.license)
     fs.writeFile(fileName, 
         '# ' +data.title+ '\n'+
@@ -128,10 +126,13 @@ function writeToFile(fileName, data) {
         
         '## Contributing: \n'+
         data.contributing+'\n'+
+
         '## Tests: \n'+
-        // data.license+'\n'+
-        '## Questions\n'+
+        data.tests+'\n'+
+        
+        '## Questions: \n'+
         'GitHub: ['+data.githubusername+'](#https://github.com/'+data.githubusername+') \n'+
+        '\n'+
         'If you have any additional questions, please contact me at '+data.email+'\n'
 
         , (err) => err ? console.log(err) : console.log('Readme file created!'));
