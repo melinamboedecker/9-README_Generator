@@ -1,7 +1,7 @@
 # YRRY
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+ 
 ## Description: 
-sad
+f
 ## Table of Contents: 
 * [Installation](#installation)
 * [Usage](#usage) 
@@ -11,14 +11,14 @@ sad
 * [Questions](#questions) 
 ## Installation: 
 ## Usage: 
-f
+h
 ![Screenshot](f)
 ## Link: 
-r
+v
 ## License: 
-Licensed under the [MIT](https://opensource.org/licenses/MIT) license. 
+Licensed under the  license. 
 ## Contributing
-g
+f
 ## Tests: 
 ## Questions
-g
+f

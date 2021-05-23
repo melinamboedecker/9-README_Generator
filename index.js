@@ -52,7 +52,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose a license',
-        choices: ['MIT', 'Apache', 'GPL'],
+        choices: ['MIT', 'Apache', 'GPL', 'no license'],
     },
     {
         type: 'input',
@@ -89,6 +89,9 @@ function getBadge (chosenLicense) {
             if (chosenLicense === 'GPL') {
                 licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
                 licenseLink = '[GPL](https://www.gnu.org/licenses/gpl-3.0)';
+            } else {
+                licenseBadge = ''
+                licenseLink = ''
             }
         }
     }
