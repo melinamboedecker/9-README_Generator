@@ -1,7 +1,7 @@
 # YRRY
- 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ## Description: 
-fa
+s
 ## Table of Contents: 
 * [Installation](#installation)
 * [Usage](#usage) 
@@ -11,14 +11,14 @@ fa
 * [Questions](#questions) 
 ## Installation: 
 ## Usage: 
-er
-![Screenshot](f)
-[Deployed page](#d
+r
+![Screenshot]()
+[Deployed page](#f
 ## License: 
-Licensed under the  license. 
+Licensed under the [MIT](https://opensource.org/licenses/MIT) license. 
 ## Contributing: 
-f
+g
 ## Tests: 
 ## Questions
-![GitHub-Mark-32px.png] [melinamboedecker](#https://github.com/melinamboedecker) 
+ @ icon-github [melinamboedecker](#https://github.com/melinamboedecker) 
 If you have any additional questions, please contact me at melinamboedecker@gmail.com

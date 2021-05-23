@@ -131,7 +131,7 @@ function writeToFile(fileName, data) {
         '## Tests: \n'+
         // data.license+'\n'+
         '## Questions\n'+
-        '![GitHub-Mark-32px.png] ['+data.githubusername+'](#https://github.com/'+data.githubusername+') \n'+
+        ' @ icon-github ['+data.githubusername+'](#https://github.com/'+data.githubusername+') \n'+
         'If you have any additional questions, please contact me at '+data.email+'\n'
 
         , (err) => err ? console.log(err) : console.log('Readme file created!'));
