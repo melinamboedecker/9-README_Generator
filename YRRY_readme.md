@@ -1,7 +1,7 @@
 # YRRY
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ## Description: 
-sdfgdf
+sad
 ## Table of Contents: 
 * [Installation](#installation)
 * [Usage](#usage) 
@@ -11,14 +11,14 @@ sdfgdf
 * [Questions](#questions) 
 ## Installation: 
 ## Usage: 
-asdf
-![Screenshot](fsgb)
+f
+![Screenshot](f)
 ## Link: 
-asf
+r
 ## License: 
-Licensed under the [GPL](https://www.gnu.org/licenses/gpl-3.0) license. 
+Licensed under the [MIT](https://opensource.org/licenses/MIT) license. 
 ## Contributing
-wr
+g
 ## Tests: 
 ## Questions
-wr
+g

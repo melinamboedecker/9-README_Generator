@@ -2,6 +2,10 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+// const requireEmail = (value) => {
+//     if (/\w/.test)
+// }
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -59,14 +63,14 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'Enter your email address',
-        // validate: function(input) {
-        //     if (input.includes("@")) {
-        //         return true;
-        //     } else {
-        //         return false;
-        //     }
-        // }
+        validate(value) {
+            const okay = value.includes('@') && value.includes('.');
+            if (okay) {
+                return true;
+            }
 
+            return "Please enter a valid email address"
+        }   
     }
 ];
 

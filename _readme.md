@@ -1,7 +1,7 @@
-# sgh
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+# 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 ## Description: 
-dsg
+yrry
 ## Table of Contents: 
 * [Installation](#installation)
 * [Usage](#usage) 
@@ -11,14 +11,14 @@ dsg
 * [Questions](#questions) 
 ## Installation: 
 ## Usage: 
-u
-![Screenshot](h)
+r
+![Screenshot](r)
 ## Link: 
-g
+r
 ## License: 
-GPL
+Licensed under the [MIT](https://opensource.org/licenses/MIT) license. 
 ## Contributing
-d
+r
 ## Tests: 
 ## Questions
-d
+r
