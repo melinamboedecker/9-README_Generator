@@ -80,15 +80,15 @@ var licenseLink;
 function getBadge (chosenLicense) {
     if (chosenLicense === 'MIT') {
         licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
-        licenseLink = '[MIT](https://opensource.org/licenses/MIT)';
+        licenseLink = '## License: \n Licensed under the [MIT](https://opensource.org/licenses/MIT) license.';
     } else {
         if (chosenLicense === 'Apache') {
             licenseBadge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
-            licenseLink = '[Apache](https://opensource.org/licenses/Apache-2.0)';
+            licenseLink = '## License: \n Licensed under the [Apache](https://opensource.org/licenses/Apache-2.0) license.';
         } else {
             if (chosenLicense === 'GPL') {
                 licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
-                licenseLink = '[GPL](https://www.gnu.org/licenses/gpl-3.0)';
+                licenseLink = '## License: \n Licensed under the [GPL](https://www.gnu.org/licenses/gpl-3.0) license.';
             } else {
                 licenseBadge = ''
                 licenseLink = ''
@@ -117,12 +117,12 @@ function writeToFile(fileName, data) {
         '* [Questions](#questions) \n'+
         '## Installation: \n'+
         '## Usage: \n'+
-        data.usage+ '\n'+
+        data.usage + '\n'+
         '![Screenshot]('+data.screenshot+')\n'+
         '[Deployed page](#'+data.link+'\n'+
        
-        '## License: \n'+
-        `Licensed under the ${licenseLink} license. \n`+
+     
+        `${licenseLink} \n`+
         
         '## Contributing: \n'+
         data.contributing+'\n'+
