@@ -1,12 +1,9 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// const requireEmail = (value) => {
-//     if (/\w/.test)
-// }
 
-// TODO: Create an array of questions for user input
+//array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -27,11 +24,6 @@ const questions = [
         type: 'input',
         name: 'usage',
         message: 'Enter usage instructions and examples for use',
-    },
-    {
-        type: 'input',
-        name: 'screenshot',
-        message: 'add path for screenshot',
     },
     {
         type: 'input',
@@ -74,35 +66,47 @@ const questions = [
     }
 ];
 
+//variablefor license badge
 var licenseBadge;
+//variable for license link
 var licenseLink;
 
+//fuction to get the correct badge and link for chosen license
 function getBadge (chosenLicense) {
     if (chosenLicense === 'MIT') {
         licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
-        licenseLink = '## License: \n Licensed under the [MIT](https://opensource.org/licenses/MIT) license.';
+        licenseLink = 'Licensed under the [MIT](https://opensource.org/licenses/MIT) license.';
     } else {
         if (chosenLicense === 'Apache') {
             licenseBadge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
-            licenseLink = '## License: \n Licensed under the [Apache](https://opensource.org/licenses/Apache-2.0) license.';
+            licenseLink = 'Licensed under the [Apache](https://opensource.org/licenses/Apache-2.0) license.';
         } else {
             if (chosenLicense === 'GPL') {
                 licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
-                licenseLink = '## License: \n Licensed under the [GPL](https://www.gnu.org/licenses/gpl-3.0) license.';
+                licenseLink = 'Licensed under the [GPL](https://www.gnu.org/licenses/gpl-3.0) license.';
             } else {
                 licenseBadge = ''
-                licenseLink = ''
+                licenseLink = 'none'
             }
         }
     }
 }
 
+//variable and function for adding link to deployed page if entered
+var deployedPage;
+function getAppLink (link) {
+    if (!link) {
+        deployedPage = '';
+    } else {
+        deployedPage = `\n[Click here for deployed page](`+link+')'
+    }
+}
 
 
-
-// TODO: Create a function to write README file
+//  function to write README file with data per users input
 function writeToFile(fileName, data) { 
     getBadge(data.license)
+    getAppLink(data.link)
     fs.writeFile(fileName, 
         '# ' +data.title+ '\n'+
         `${licenseBadge} \n`+
@@ -116,12 +120,13 @@ function writeToFile(fileName, data) {
         '* [Tests](#tests) \n'+
         '* [Questions](#questions) \n'+
         '## Installation: \n'+
+        data.installation+'\n'+
         '## Usage: \n'+
-        data.usage + '\n'+
-        '![Screenshot]('+data.screenshot+')\n'+
-        '[Deployed page](#'+data.link+'\n'+
+        data.usage+'\n'+
+        
+        `\n${deployedPage}\n`+
        
-     
+        '## License: \n'+
         `${licenseLink} \n`+
         
         '## Contributing: \n'+
@@ -131,20 +136,20 @@ function writeToFile(fileName, data) {
         data.tests+'\n'+
         
         '## Questions: \n'+
-        'GitHub: ['+data.githubusername+'](#https://github.com/'+data.githubusername+') \n'+
+        'GitHub: ['+data.githubusername+'](https://github.com/'+data.githubusername+') \n'+
         '\n'+
         'If you have any additional questions, please contact me at '+data.email+'\n'
 
         , (err) => err ? console.log(err) : console.log('Readme file created!'));
 }
 
-// TODO: Create a function to initialize app
+//function to initialize app
 function init() {
     const inquirer = require('inquirer');
     inquirer.prompt(questions)
     .then((data) => {
         console.log(data);
-        writeToFile(`${data.title}_readme.md`, data);
+        writeToFile(`README.md`, data);
     })
     
 }
