@@ -14,7 +14,7 @@ Run npm install from the main folder in your bash terminal to install dependenci
 ## Usage: 
 Run node index.js from the main folder in the command line of your bash terminal to start the readme generator, then answer the prompts. 
 
-![Screenshot](main/2readmegeneratorpractice.gif)
+![Screenshot](main/ReadmeGeneratorWalkthroughVideo.gif)
 
 ## License: 
 Licensed under the MIT license.
