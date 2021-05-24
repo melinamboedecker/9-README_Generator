@@ -10,9 +10,9 @@ This is a command line app using node.js and inquirer.js for users to generate a
 * [Tests](#tests) 
 * [Questions](#questions) 
 ## Installation: 
-Run npm install from the main folder to install dependencies.
+Run npm install from the main folder in your bash terminal to install dependencies.
 ## Usage: 
-Run node index.js from the main folder in the command line to start the readme generator, then answer the prompts. 
+Run node index.js from the main folder in the command line of your bash terminal to start the readme generator, then answer the prompts. 
 
 ![Screenshot](main/2readmegeneratorpractice.gif)
 

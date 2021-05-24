@@ -13,7 +13,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Enter the description here:',
+        message: 'Enter your project description here:',
     },
     {
         type: 'input',
@@ -28,7 +28,7 @@ const questions = [
     {
         type: 'input',
         name: 'link',
-        message: 'add link to deployed page',
+        message: 'add link to deployed page if desired',
     },
     {
         type: 'input',
